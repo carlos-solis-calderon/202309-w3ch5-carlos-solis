@@ -1,12 +1,14 @@
-# Week 3 - Challenge 4
+Pokémon
+Esta aplicación tendrá tres páginas:
 
-## Series
+Todos los pokémon Detalle de pokémon El listado de todos los pokémon se alimentará de la PokéAPI, y deberá ir paginado. El listado incluirá el nombre del pokemon y su imagen y deberá ir acompañado de dos botones, para avanzar y retroceder de página. También debe mostrar el total de pokèmon mostrados vs. el total de pokèmon que existen (p.e. 10/1000).
 
-Aquí tienes una aplicación maquetada con HTML y CSS. Se trata de una aplicación que gestiona un listado de series, separándolas entre series vistas y no vistas.
+El usuario debería poder ir al detalle de un pokémon, donde se le mostrarán más datos. A esta página de detalle se llega pasando una id por la URL (la id del pokémon que queremos ver).
 
-Esta aplicación se alimentará de un objeto JS que tienes en el archivo `series.js`.
+Extra Añadir una tercera página:
 
-Tienes que mostrar un listado de series, separándolas entre vistas y no vistas. Cada serie tiene que mostrar toda la información que ves en la maqueta. Si la serie es no vista, sus estrellas tienen que estar a 0 y el usuario debería poder hacer clic para valorar la serie con las estrellas que crea necesario. Al hacer clic en una estrella, la aplicación debe modificar la valoración y la serie debe pasar de no vista a vista (no hay ninguna manera de pasar una serie de vista a no vista).
+Mis pokémon El usuario debe poder añadir los pokémon que quiera a su listado local. El listado de Mis pokémon se alimentará de [una API local]. El usuario debería poder eliminar pokémon de su listado local, y también modificar algún/unos dato/s.
 
-Si el usuario hace click en el icono de la x, la serie se debe eliminar.
-Copied
+Desde los favoritos, también se puede acceder a la página de detalle.
+
+Features Opcional: BEM + sass Vite HTML semántico Testing
