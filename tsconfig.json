@@ -19,5 +19,5 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "src/model/type.ts", "main.ts"]
+  "include": ["src", "src/model/type.ts", "src/main.ts"]
 }

@@ -2,7 +2,6 @@ import { Component } from './components';
 import { Pokemon } from '../model/type';
 import { ApiRepo } from '../data/repo';
 import { Card } from './card';
-/* Import '../scss/style.scss'; */
 
 export class List extends Component {
   pokemons: Pokemon | undefined;
