@@ -16,7 +16,7 @@
     "sass": "sass scss:css -w --no-source-map"
   },
   "keywords": [],
-  "author": "Abel Naharro",
+  "author": "carlos",
   "license": "ISC",
   "prettier": {
     "singleQuote": true

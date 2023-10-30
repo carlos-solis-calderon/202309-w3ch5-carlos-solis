@@ -1,5 +1,5 @@
 import { ApiRepo } from '../data/repo';
-import { Pokemon } from '<model />type.t
+import { Pokemon } from '../model/type';
 import { Component } from './components';
 
 export class Card extends Component {
@@ -19,7 +19,7 @@ export class Card extends Component {
   }
 
   manageComponent() {
-    throw new Error('Method not implemented.');
+    throw new Error('not implemented.');
   }
 
   async loadDetails(): Promise<any> {

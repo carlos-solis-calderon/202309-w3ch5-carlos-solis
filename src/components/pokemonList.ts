@@ -1,8 +1,8 @@
 import { Component } from './components';
-import { Pokemon } from '../models/pokemon';
-import { ApiRepo } from '../data/api.repo';
+import { Pokemon } from '../model/type';
+import { ApiRepo } from '../data/repo';
 import { Card } from './card';
-import '../scss/style.scss';
+/* Import '../scss/style.scss'; */
 
 export class List extends Component {
   pokemons: Pokemon | undefined;
@@ -20,7 +20,6 @@ export class List extends Component {
   async loadPokemons(page: number) {
     try {
       this.pokemons = await this.repo.getPokemons(page);
-      console.log(this.pokemons);
       this.clear();
       this.render();
     } catch (error) {
@@ -28,9 +27,15 @@ export class List extends Component {
     }
   }
 
+  clear() {
+    throw new Error('Method not implemented.');
+  }
+
   render() {
     this.template = this.createTemplate();
     super.render();
+    console.log('LISTA CON CARDS DE POKEMON');
+    console.log(this.pokemons);
 
     const listPokemons: string[] | undefined = this.pokemons?.results;
     return listPokemons?.map(
@@ -41,13 +46,6 @@ export class List extends Component {
   createTemplate() {
     return `
     <ul class="cards"></ul>
-    <div class="buttons-pages">
-      <button class="button-back" type="button">
-        <i class="fa fa-chevron-left" aria-hidden="true"></i> Back
-      </button>
-      <button class="button-next" type="button">
-        Next <i class="fa fa-chevron-right" aria-hidden="true"></i> 
-      </button>
-    </div>`;
+    `;
   }
 }

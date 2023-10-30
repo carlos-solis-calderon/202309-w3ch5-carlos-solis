@@ -1,5 +1,5 @@
 import { Component } from './components';
-import '../scss/style.scss';
+import '../styles/style.css';
 
 export class Header extends Component {
   title: string;
