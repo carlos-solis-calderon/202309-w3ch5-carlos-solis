@@ -1,4 +1,4 @@
-import { Pokemon } from './';
+import { Pokemon } from './src/model/type';
 
 export class ApiRepo {
   getPokemons(
